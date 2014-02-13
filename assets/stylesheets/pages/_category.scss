@@ -1,0 +1,48 @@
+.mw_category {
+
+
+	.filter {
+		background-color: #6A1B00;
+		border: 1px solid #6A1B00;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		margin: 0.5em;
+		margin-right: 0;
+
+		h2, .SortBox {
+			font-size: 1em;
+			color: white;
+			padding: 1em;
+			-webkit-margin-before: 0;
+			-webkit-margin-after: 0;
+			margin: 0;
+			font-weight: bold;
+		}
+
+		.BlockContent {
+
+			ul {
+				list-style: none;
+				-webkit-margin-before: 0;
+				-webkit-margin-after: 0;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+				-webkit-padding-start: 0px;
+				background-color: beige;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+
+				li {
+					padding: 0.5em;
+					border: 1px solid #6A1B00;
+
+					a {
+						color: #6A1B00;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+}

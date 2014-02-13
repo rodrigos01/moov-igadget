@@ -1,0 +1,28 @@
+._product {
+
+	.ProductMain {
+		background-color: azure;
+		margin-left: 0.5em;
+		border: inset medium;
+		border-right: none;
+		padding: 0.5em;
+
+		div.Label {
+			float: left;
+		}
+
+		div.Value {
+			margin-bottom: 0.5em;
+
+			div.BulkDiscount {
+
+				input {
+					@include btn();
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+}

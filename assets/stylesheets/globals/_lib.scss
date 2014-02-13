@@ -3,5 +3,12 @@
 }
 
 @mixin btn {
-  
+  display: block;
+border-radius: 5px;
+border: 1px solid black;
+color: white;
+font-size: 1.2em;
+padding: 0.5em;
+text-decoration: none;
+@include background(linear-gradient(#C14102 0, shade(#C14102, 20%) 100%));
 }
