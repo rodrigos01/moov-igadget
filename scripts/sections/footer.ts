@@ -6,4 +6,7 @@
 
 
 $(".//div[@id='Footer']") {
+	remove("./p")
+	insert("p", "All prices are in USD");
+	insert("p", "Copyright 2014 igadget commerce");
 }

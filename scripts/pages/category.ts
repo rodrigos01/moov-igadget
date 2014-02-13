@@ -7,6 +7,7 @@ $("./body") {
       $("./div[@class='Left']") {
         # Create Togglers
         $("./div[@id='SideShopByBrand' or @id='SideCategoryShopByPrice']") {
+          add_class("filter");
           attribute("data-ur-set", "toggler")
           $("./h2") {
             attribute("data-ur-toggler-component", "button")
@@ -26,7 +27,9 @@ $("./body") {
       }
    
       $("./div[@class='Content ']") {
+        remove("./div[contains(@class, 'Breadcrumb')]")
         $("./div[@id='CategoryHeading']") {
+          add_class("filter");
           $("./div[@class='BlockContent']") {
             # Move page title on top of the content area
             $("./h2") {

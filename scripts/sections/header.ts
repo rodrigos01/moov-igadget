@@ -9,6 +9,8 @@ $("//div[@id='SearchForm']/form//input[@type='image']") {
   attribute("style", "opacity:0;")
 }
 
+remove(".//div[@id='AjaxLoading']")
+
 $(".//div[@id='Header']") {
   attribute("data-ur-set", "toggler")
   $("./div[@id='Logo']") {
@@ -21,9 +23,19 @@ $(".//div[@id='Header']") {
 	    		add_class("sprites-user");
 	    		text("");
 	    	}
-	    	$("./li[@class='CartLink']/a") {
-	    		add_class("sprites-cart");
-	    		text("");
+	    	$("./li[@class='CartLink']") {
+
+	    		$("//h2[contains(.,'Your Shopping Cart')]") {
+		    		$cartCount = fetch("//div[@id='LayoutColumn3']//div[@class='BlockContent']/p[1]/strong[1]/text()");
+		    		log("cartCount: "+$cartCount);
+	    		}
+
+	    		insert("div", $cartCount, class: "cartCount");
+
+	    		$("./a") {
+		    		add_class("sprites-cart");
+		    		text("");
+	    		}
 	    	}
 	    }
 	  }
