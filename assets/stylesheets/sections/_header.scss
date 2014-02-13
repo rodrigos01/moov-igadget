@@ -1,3 +1,86 @@
-header._header {
-  
+
+#Header {
+  background: $color1;
+  a {
+    color: $color2;
+  }
+  #SearchForm {
+    @include background(linear-gradient(top, #852201, #6a1b00));
+  }
+
+  border-top: 1px solid black;
+  #Logo {
+    @include background(linear-gradient(#C14102 0, shade(#C14102, 20%) 100%));
+    h1 {
+      margin: 0;
+      padding: 10px;
+      a {
+        font-size: 22px;
+        text-shadow: 0 -1px rgba(0,0,0,0.9);
+        color: white;
+      }
+    }
+    #TopMenu {
+    	float: right;
+      height: 43px;
+
+    	ul {
+    		list-style: none;
+    		-webkit-margin-before: 0;
+  			-webkit-margin-after: 0;
+  			-webkit-padding-start: 0;
+  			margin: 0;
+  			padding: 0;
+
+    		li {
+    			display: inline-block;
+    			margin-right: 10px;
+
+    			a {
+    				display: block;
+    			}
+    		}
+    	}
+    }
+
+    #LogoContainer {
+		position: relative;
+		margin-right: 111px;
+
+		h1 {
+
+		}
+	}
+  }
+  .mw_header_bottom {
+    @include background(linear-gradient(top, #852201, #6a1b00));
+    padding: 10px;
+    .mw_search {
+      position: relative;
+      margin-right: 84px;
+      input[type='text']{
+        border: 1px solid black;
+        background-color: #f1f0f0;
+        font-size: 13px;
+        padding: 4px;
+        height: 23px;
+        margin: 0;
+        width: 100%;
+        display: block;
+      }
+      .mw_search_btn {
+        height: 33px;
+        position: absolute;
+        top: 0;
+        right: -13px;
+      }
+    }
+    .mw_menu_btn {
+      float: right;
+      display: block;
+      &[data-ur-state="enabled"] span {
+        @extend .sprites-menu-on;
+      }
+    }
+  }
 }

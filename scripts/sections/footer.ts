@@ -3,3 +3,7 @@
 #     Move stuff here
 #   }
 # }
+
+
+$(".//div[@id='Footer']") {
+}
